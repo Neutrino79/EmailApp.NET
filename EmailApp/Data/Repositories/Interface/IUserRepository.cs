@@ -6,9 +6,9 @@ namespace EmailApp.Data.Repositories.Interface
     {
         Task<IEnumerable<User>> GetAllUsersAsync();
         Task<User> GetUserByIdAsync(int id);
-        Task CreateUserAsync(User user);
-        Task UpdateUserAsync(User user);
-        Task DeleteUserAsync(int id);
+        Task<bool> CreateUserAsync(User user);
+        Task<bool> UpdateUserAsync(User user);
+        Task<bool> DeleteUserAsync(int id);
 
     }
 }
