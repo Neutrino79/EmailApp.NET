@@ -2,6 +2,7 @@
 using EmailApp.Models.Entites;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Logging.Abstractions;
 
 namespace EmailApp.Data.Repositories
 {
@@ -20,7 +21,10 @@ namespace EmailApp.Data.Repositories
         {
             return await _applicationDb.Users.AsNoTracking().ToListAsync();
         }
-
+        public async Task<User> GetUserByEmailAsync(string email)
+        {
+            return await _applicationDb.Users.FirstOrDefaultAsync(u => u.Email == email);
+        }
         public async Task<User?> GetUserByIdAsync(int id)
         {
             return await _applicationDb.Users.AsNoTracking().FirstOrDefaultAsync(u => u.UserId == id);

@@ -20,6 +20,6 @@ namespace EmailApp.Models.Entites
         [DataType(DataType.Password)]
         public string Password { get; set; }
 
-        public bool IsVerified { get; set; } = false;
+        public bool IsSubscribed { get; set; } = false;
     }
 }

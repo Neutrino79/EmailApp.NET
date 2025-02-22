@@ -37,5 +37,10 @@ namespace EmailApp.Services
         {
             return await _userRepository.DeleteUserAsync(id);
         }
+
+        public async Task<User> GetUserByEmailAsync(string email)
+        {
+            return await _userRepository.GetUserByEmailAsync(email);
+        }
     }
 }

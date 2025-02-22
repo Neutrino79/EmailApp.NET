@@ -7,7 +7,8 @@ namespace EmailApp.Services.Interface
         Task<IEnumerable<Admin>> GetAllAdminAsync();
         Task<Admin> GetAdminByIdAsync(int id);
         Task<bool> CreateAdminAsync(Admin admin);
-        Task<bool> UpdateAdminAsync(User admin);
+        Task<Admin> GetAdminByEmailAsync(string email);
+        Task<bool> UpdateAdminAsync(Admin admin);
         Task<bool> DeleteAdminAsync(int id);
     }
 }

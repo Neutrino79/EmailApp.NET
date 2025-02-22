@@ -6,6 +6,6 @@
         string Name { get; set; }
         string Email { get; set; }
         string Password { get; set; }
-        bool IsVerified { get; set; }
+        bool IsSubscribed { get; set; }
     }
 }
