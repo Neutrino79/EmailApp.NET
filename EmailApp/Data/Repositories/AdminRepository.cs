@@ -17,7 +17,7 @@ namespace EmailApp.Data.Repositories
 
         public async Task<IEnumerable<Admin>> GetAllAdminAsync()
         {
-            return (IEnumerable<Admin>)await _applicationDb.Admins.ToListAsync();
+            return await _applicationDb.Admins.ToListAsync();
         }
 
         public async Task<User> GetAdminByIdAsync(int id)
