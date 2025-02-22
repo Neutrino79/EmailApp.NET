@@ -6,9 +6,11 @@ namespace EmailApp.Services.Interface
     {
         Task<IEnumerable<Subscribed>> GetAllSubscribedUsersAsync();
         Task<Subscribed?> GetSubscribedByEmailAsync(string email);
-        Task<Subscribed?> GetSubscribedByIdAsync(int id);
+        Task<IEnumerable<User>> GetSubscribedByIdAsync(List<int> ids);
         Task<bool> AddSubscribedAsync(Subscribed subscriber);
         Task<bool> RemoveSubscribedByIdAsync(int id);
         Task<bool> RemoveSubscribedByEmailAsync(string email);
+        Task<bool> SendMailAsync(string selectedUserIds, string subject, string message);
+        
     }
 }

@@ -1,6 +1,8 @@
 using EmailApp.Data;
 using EmailApp.Data.Repositories;
 using EmailApp.Data.Repositories.Interface;
+using EmailApp.Services;
+using EmailApp.Services.Interface;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -15,6 +17,11 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IAdminRepository, AdminRepository>();
 builder.Services.AddScoped<ISubscribedRepository, SubscribedRepository>();
+
+builder.Services.AddScoped<IUserService,UserService>();
+//builder.Services.AddScoped<IAdminService, AdminService>();
+builder.Services.AddScoped<ISubscribedService, SubscribedService>();
+
 
 
 

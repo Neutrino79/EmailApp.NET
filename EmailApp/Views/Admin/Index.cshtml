@@ -1,0 +1,130 @@
+﻿@model IEnumerable<EmailApp.Models.Entites.Subscribed>
+@{
+    ViewData["Title"] = "Admin Home";
+}
+
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <i class="bi bi-exclamation-triangle"></i> @TempData["ErrorMessage"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        <i class="bi bi-check-circle"></i> @TempData["SuccessMessage"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+
+
+<div class="container-fluid">
+    <div class="row mt-4">
+        <!-- Left Side: Subscribers List -->
+        <div class="col-md-4">
+            <div class="card shadow-lg border-0">
+                <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
+                    <h5 class="mb-0">Subscribed Users</h5>
+                    <button id="selectAllBtn" class="btn btn-sm btn-light text-primary">
+                        <i class="bi bi-check2-square"></i> Select All
+                    </button>
+                </div>
+                <div class="card-body overflow-auto" style="max-height: 500px;">
+                    @if (Model.Any())
+                    {
+                        <ul class="list-group">
+                            @foreach (var sub in Model)
+                            {
+                                <li class="list-group-item d-flex align-items-center">
+                                    <input type="checkbox" class="form-check-input me-2 user-checkbox" value="@sub.User.UserId">
+                                    <span class="fw-bold">@sub.User.Name</span>
+                                    <small class="text-muted ms-auto">@sub.User.Email</small>
+                                </li>
+                            }
+                        </ul>
+                    }
+                    else
+                    {
+                        <p class="text-muted text-center">No subscribers found.</p>
+                    }
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Side: Mail Compose UI -->
+        <div class="col-md-8">
+            <div class="card shadow-lg border-0">
+                <div class="card-header bg-success text-white">
+                    <h5 class="mb-0">Compose Mail</h5>
+                </div>
+                <div class="card-body">
+                    <form asp-action="SendMail" method="post">
+                        <!-- Hidden input to store selected user IDs -->
+                        <input type="hidden" id="selectedUserIds" name="selectedUserIds">
+
+                        <div class="mb-3">
+                            <label class="form-label fw-bold">To (Selected Users)</label>
+                            <input type="text" id="toEmailsDisplay" class="form-control bg-light" placeholder="Select users from the list..." readonly>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label fw-bold">Subject</label>
+                            <input type="text" name="subject" class="form-control" placeholder="Enter subject..." required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label fw-bold">Message</label>
+                            <textarea name="message" rows="6" class="form-control" placeholder="Write your email here..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-success w-100">
+                            <i class="bi bi-send-fill"></i> Send Mail
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- JavaScript to Handle User Selection -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const checkboxes = document.querySelectorAll(".user-checkbox");
+        const selectedUserIdsInput = document.getElementById("selectedUserIds");
+        const toEmailsDisplay = document.getElementById("toEmailsDisplay");
+        const selectAllBtn = document.getElementById("selectAllBtn");
+
+        function updateSelectedUsers() {
+            let selectedEmails = [];
+            let selectedUserIds = [];
+
+            checkboxes.forEach(cb => {
+                if (cb.checked) {
+                    selectedEmails.push(cb.nextElementSibling.textContent.trim());
+                    selectedUserIds.push(cb.value);
+                }
+            });
+
+            toEmailsDisplay.value = selectedEmails.join(", ");
+            selectedUserIdsInput.value = selectedUserIds.join(",");
+        }
+
+        checkboxes.forEach(checkbox => {
+            checkbox.addEventListener("change", updateSelectedUsers);
+        });
+
+        // Select All / Deselect All
+        selectAllBtn.addEventListener("click", function () {
+            let allChecked = [...checkboxes].every(cb => cb.checked);
+            checkboxes.forEach(cb => cb.checked = !allChecked);
+            updateSelectedUsers();
+
+            selectAllBtn.innerHTML = allChecked
+                ? '<i class="bi bi-check2-square"></i> Select All'
+                : '<i class="bi bi-x-square"></i> Deselect All';
+        });
+    });
+</script>

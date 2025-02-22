@@ -219,3 +219,6 @@ C:\Users\atharvumesh_hiremath\source\repos\MVC\EmailApp\EmailApp\obj\Debug\net9.
 C:\Users\atharvumesh_hiremath\source\repos\MVC\EmailApp\EmailApp\obj\Debug\net9.0\EmailApp.genruntimeconfig.cache
 C:\Users\atharvumesh_hiremath\source\repos\MVC\EmailApp\EmailApp\obj\Debug\net9.0\ref\EmailApp.dll
 C:\Users\atharvumesh_hiremath\source\repos\MVC\EmailApp\EmailApp\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
+C:\Users\atharvumesh_hiremath\source\repos\MVC\EmailApp\EmailApp\bin\Debug\net9.0\BouncyCastle.Cryptography.dll
+C:\Users\atharvumesh_hiremath\source\repos\MVC\EmailApp\EmailApp\bin\Debug\net9.0\MailKit.dll
+C:\Users\atharvumesh_hiremath\source\repos\MVC\EmailApp\EmailApp\bin\Debug\net9.0\MimeKit.dll

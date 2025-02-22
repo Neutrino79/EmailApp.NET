@@ -1,5 +1,6 @@
 ﻿using EmailApp.Data.Repositories.Interface;
 using EmailApp.Models.Entites;
+using EmailApp.Services.Interface;
 using Microsoft.AspNetCore.Mvc;
 
 namespace EmailApp.Controllers
@@ -7,17 +8,17 @@ namespace EmailApp.Controllers
     [Route("Users")]
     public class UserController : Controller
     {
-        private readonly IUserRepository _UserRepository;
+        private readonly IUserService _userService;
 
-        public UserController(IUserRepository userRepository)
+        public UserController(IUserService userService)
         {
-            _UserRepository = userRepository;
+            _userService = userService;
         }
 
         [Route("All")]
         public async Task<IActionResult> Index()
         {
-            var Users = await _UserRepository.GetAllUsersAsync();
+            var Users = await _userService.GetAllUsersAsync();
             return View(Users);
         }
     }

@@ -9,6 +9,7 @@ namespace EmailApp.Controllers
         {
             return View();
         }
+
         [HttpPost]
         public async Task<IActionResult> Index(User model)
         {

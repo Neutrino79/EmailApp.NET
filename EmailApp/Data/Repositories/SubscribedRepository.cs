@@ -19,7 +19,7 @@ namespace EmailApp.Data.Repositories
 
         public async Task<IEnumerable<Subscribed>> GetAllSubscribedUserAsync()
         {
-            return await _applicationDb.Subscriptions.AsNoTracking().ToListAsync();
+            return await _applicationDb.Subscriptions.Include(x => x.User).AsNoTracking().ToListAsync();
         }
 
         public async Task<Subscribed?> GetSubscribedByEmailAsync(string email)
@@ -27,6 +27,7 @@ namespace EmailApp.Data.Repositories
             try
             {
                 return await _applicationDb.Subscriptions
+                    .Include(x=>x.User)
                     .AsNoTracking()
                     .FirstOrDefaultAsync(x => x.User.Email == email);
             }
@@ -37,17 +38,20 @@ namespace EmailApp.Data.Repositories
             }
         }
 
-        public async Task<Subscribed?> GetSubscribedByIdAsync(int id)
+        public async Task<IEnumerable<User>> GetSubscribedByIdAsync(List<int> userIds)
         {
             try
             {
                 return await _applicationDb.Subscriptions
                     .AsNoTracking()
-                    .FirstOrDefaultAsync(x => x.Id == id);
+                    .Where(s => userIds.Contains(s.User.UserId))
+                    .Select(s => s.User)
+                    .ToListAsync();
+
             }
             catch (Exception ex)
             {
-                _logger.LogError("Error retrieving subscriber with ID {Id}: {Message}", id, ex.Message);
+                _logger.LogError("Error retrieving subscriber with ID {Id}: {Message}", ex.Message);
                 return null;
             }
         }
