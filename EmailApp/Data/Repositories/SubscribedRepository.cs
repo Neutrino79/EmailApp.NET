@@ -75,7 +75,7 @@ namespace EmailApp.Data.Repositories
         {
             try
             {
-                var sub = await _applicationDb.Subscriptions.FindAsync(id);
+                var sub = await _applicationDb.Subscriptions.Where(x => x.UserId == id).FirstOrDefaultAsync();
                 if (sub == null)
                 {
                     _logger.LogWarning("No subscriber found with ID {Id}", id);

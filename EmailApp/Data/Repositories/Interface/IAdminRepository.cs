@@ -6,8 +6,7 @@ namespace EmailApp.Data.Repositories.Interface
     {
         Task<IEnumerable<Admin>> GetAllAdminAsync();
         Task<Admin> GetAdminByIdAsync(int id);
-        Task<Admin> GetAdminByEmailAsync(string email);
-
+        Task<Admin> GetAdminByUsernameAsync(string username);
         Task<bool> CreateAdminAsync(Admin admin);
         Task<bool> UpdateAdminAsync(Admin admin);
         Task<bool> DeleteAdminAsync(int id);

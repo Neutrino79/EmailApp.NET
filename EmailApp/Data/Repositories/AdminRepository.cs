@@ -7,9 +7,9 @@ namespace EmailApp.Data.Repositories
     public class AdminRepository : IAdminRepository
     {
         private readonly ApplicationDbContext _applicationDb;
-        private readonly ILogger<UserRepository> _logger;
+        private readonly ILogger<AdminRepository> _logger;
 
-        public AdminRepository(ApplicationDbContext applicationDb, ILogger<UserRepository> logger)
+        public AdminRepository(ApplicationDbContext applicationDb, ILogger<AdminRepository> logger)
         {
             _applicationDb = applicationDb;
             _logger = logger;
@@ -25,10 +25,11 @@ namespace EmailApp.Data.Repositories
             return await _applicationDb.Admins.FindAsync(id);
         }
 
-        public async Task<Admin> GetAdminByEmailAsync(string email)
+        public async Task<Admin> GetAdminByUsernameAsync(string username)
         {
-            return await _applicationDb.Admins.FindAsync(email);
+            return await _applicationDb.Admins.FirstOrDefaultAsync(a => a.Username == username);
         }
+
         public async Task<bool> CreateAdminAsync(Admin admin)
         {
             try
@@ -39,10 +40,9 @@ namespace EmailApp.Data.Repositories
             }
             catch (Exception ex)
             {
-                _logger.LogError("User was not added: {0}", ex.Message);
+                _logger.LogError("Admin was not added: {0}", ex.Message);
                 return false;
             }
-
         }
 
         public async Task<bool> UpdateAdminAsync(Admin admin)
@@ -55,7 +55,7 @@ namespace EmailApp.Data.Repositories
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex.Message);
+                _logger.LogError("Failed to update admin: {0}", ex.Message);
                 return false;
             }
         }
@@ -65,16 +65,18 @@ namespace EmailApp.Data.Repositories
             try
             {
                 var admin = await _applicationDb.Admins.FindAsync(id);
+                if (admin == null)
+                    return false;
+
                 _applicationDb.Admins.Remove(admin);
                 await _applicationDb.SaveChangesAsync();
                 return true;
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex.Message);
+                _logger.LogError("Failed to delete admin: {0}", ex.Message);
                 return false;
             }
-
         }
     }
 }

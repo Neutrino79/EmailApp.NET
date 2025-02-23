@@ -5,7 +5,7 @@
 namespace EmailApp.Migrations
 {
     /// <inheritdoc />
-    public partial class UpdateUserIsSubscribed : Migration
+    public partial class MergeMigration : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

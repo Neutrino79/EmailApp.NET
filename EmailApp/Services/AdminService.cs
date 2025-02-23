@@ -25,10 +25,11 @@ namespace EmailApp.Services
             return await _adminRepository.GetAdminByIdAsync(id);
         }
 
-        public async Task<Admin?> GetAdminByEmailAsync(string email)
+        public async Task<Admin> GetAdminByUsernameAsync(string username)
         {
-            return await _adminRepository.GetAdminByEmailAsync(email);
+            return await _adminRepository.GetAdminByUsernameAsync(username);
         }
+
 
         public async Task<bool> CreateAdminAsync(Admin admin)
         {

@@ -7,15 +7,35 @@
         <div class="col-md-4">
             <div class="card shadow-lg p-4">
                 <h3 class="text-center">Login</h3>
+
+                @if (TempData["Error"] != null)
+                {
+                    <div class="alert alert-danger">@TempData["Error"]</div>
+                }
+                @if (TempData["Success"] != null)
+                {
+                    <div class="alert alert-success">@TempData["Success"]</div>
+                }
+
                 <form asp-action="Login" method="post">
                     <div class="form-group">
-                        <label>Email</label>
-                        <input type="text" name="email" class="form-control" required placeholder="Enter your email">
+                        <label for="role">Login As</label>
+                        <select id="role" name="role" class="form-control" required onchange="toggleInputField()">
+                            <option value="User" selected>User</option>
+                            <option value="Admin">Admin</option>
+                        </select>
                     </div>
+
+                    <div class="form-group mt-3">
+                        <label id="labelEmailUsername">Email</label>
+                        <input type="text" id="emailOrUsername" name="emailOrUsername" class="form-control" required placeholder="Enter your email">
+                    </div>
+
                     <div class="form-group mt-3">
                         <label>Password</label>
                         <input type="password" name="password" class="form-control" required placeholder="Enter your password">
                     </div>
+
                     <button type="submit" class="btn btn-primary w-100 mt-3">Login</button>
 
                     @if (!ViewData.ModelState.IsValid)
@@ -36,3 +56,19 @@
         </div>
     </div>
 </div>
+
+<script>
+    function toggleInputField() {
+        var role = document.getElementById("role").value;
+        var label = document.getElementById("labelEmailUsername");
+        var input = document.getElementById("emailOrUsername");
+
+        if (role === "Admin") {
+            label.textContent = "Username";
+            input.placeholder = "Enter your username";
+        } else {
+            label.textContent = "Email";
+            input.placeholder = "Enter your email";
+        }
+    }
+</script>

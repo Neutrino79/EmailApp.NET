@@ -4914,23 +4914,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\aryananand_tele\\.nuget\\packages\\": {},
+    "C:\\Users\\atharvumesh_hiremath\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\aryananand_tele\\Desktop\\EmailApp.NET\\EmailApp\\EmailApp.csproj",
+      "projectUniqueName": "C:\\Users\\atharvumesh_hiremath\\source\\repos\\MVC\\EmailApp\\EmailApp\\EmailApp.csproj",
       "projectName": "EmailApp",
-      "projectPath": "C:\\Users\\aryananand_tele\\Desktop\\EmailApp.NET\\EmailApp\\EmailApp.csproj",
-      "packagesPath": "C:\\Users\\aryananand_tele\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\aryananand_tele\\Desktop\\EmailApp.NET\\EmailApp\\obj\\",
+      "projectPath": "C:\\Users\\atharvumesh_hiremath\\source\\repos\\MVC\\EmailApp\\EmailApp\\EmailApp.csproj",
+      "packagesPath": "C:\\Users\\atharvumesh_hiremath\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\atharvumesh_hiremath\\source\\repos\\MVC\\EmailApp\\EmailApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\aryananand_tele\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\atharvumesh_hiremath\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -5001,7 +5001,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.103/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

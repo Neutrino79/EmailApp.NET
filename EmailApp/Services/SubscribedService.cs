@@ -39,7 +39,7 @@ namespace EmailApp.Services
         {
             try
             {
-                if (await _subscribedRepository.GetSubscribedByEmailAsync(subscriber.User.Email) != null)
+                if (await _subscribedRepository.AddSubscribedAsync(subscriber))
                 {
                     _logger.LogWarning("Subscription already exists for email: {Email}", subscriber.User.Email);
                     return false;

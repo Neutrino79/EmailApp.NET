@@ -14,11 +14,13 @@ namespace EmailApp.Controllers
     {
         private readonly ILogger<HomeController> _logger;
         private readonly IUserService _userService;
+        private readonly ISubscribedService _subscribedService;
 
-        public HomeController(ILogger<HomeController> logger, IUserService userService)
+        public HomeController(ILogger<HomeController> logger, IUserService userService, ISubscribedService subscribedService)
         {
             _logger = logger;
             _userService = userService;
+            _subscribedService = subscribedService;
         }
 
         public IActionResult Index()
@@ -70,6 +72,16 @@ namespace EmailApp.Controllers
             // Toggle subscription status
             user.IsSubscribed = !user.IsSubscribed;
             await _userService.UpdateUserAsync(user);
+
+            if (user.IsSubscribed)
+            {
+                var subscription = new Subscribed { UserId = user.UserId };
+                await _subscribedService.AddSubscribedAsync(subscription);
+            }
+            else
+            {
+                await _subscribedService.RemoveSubscribedByIdAsync(user.UserId);
+            }
 
             return RedirectToAction("Profile");
         }

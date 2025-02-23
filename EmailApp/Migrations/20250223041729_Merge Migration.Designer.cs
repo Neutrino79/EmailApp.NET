@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EmailApp.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250222171711_UpdateUserIsSubscribed")]
-    partial class UpdateUserIsSubscribed
+    [Migration("20250223041729_Merge Migration")]
+    partial class MergeMigration
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

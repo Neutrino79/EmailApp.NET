@@ -8,7 +8,16 @@
     <div class="card shadow-lg p-4" style="width: 400px; border-radius: 12px;">
         <h3 class="text-center mb-4">Create an Account</h3>
 
-        <form asp-controller="Auth" asp-action="Index" method="post">
+        @if (TempData["Success"] != null)
+        {
+            <div class="alert alert-success">@TempData["Success"]</div>
+        }
+        @if (TempData["Error"] != null)
+        {
+            <div class="alert alert-danger">@TempData["Error"]</div>
+        }
+
+        <form asp-controller="Auth" asp-action="Index" method="POST">
             <div class="mb-3">
                 <label asp-for="Name" class="form-label">Full Name</label>
                 <input asp-for="Name" class="form-control" placeholder="Enter your full name" required>
@@ -27,7 +36,6 @@
                 <span asp-validation-for="Password" class="text-danger"></span>
             </div>
 
-            <!-- ✅ Subscribe Checkbox -->
             <div class="mb-3 form-check">
                 <input asp-for="IsSubscribed" type="checkbox" class="form-check-input">
                 <label asp-for="IsSubscribed" class="form-check-label">Subscribe to daily emails</label>
@@ -42,7 +50,6 @@
     </div>
 </div>
 
-<!-- Bootstrap Validation -->
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />
 }
