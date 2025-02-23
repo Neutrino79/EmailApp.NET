@@ -1,11 +1,9 @@
-﻿using EmailApp.Data.Repositories.Interface;
-using EmailApp.Models.Entites;
-using EmailApp.Services.Interface;
+﻿using EmailApp.Services.Interface;
 using Microsoft.AspNetCore.Mvc;
 
 namespace EmailApp.Controllers
 {
-    [Route("Users")]
+    [Route("User")]
     public class UserController : Controller
     {
         private readonly IUserService _userService;
@@ -15,7 +13,7 @@ namespace EmailApp.Controllers
             _userService = userService;
         }
 
-        [Route("All")]
+        [Route("")]
         public async Task<IActionResult> Index()
         {
             var Users = await _userService.GetAllUsersAsync();

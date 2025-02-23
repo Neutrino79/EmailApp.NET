@@ -1,9 +1,12 @@
 ﻿using EmailApp.Data.Repositories.Interface;
 using EmailApp.Models.Entites;
+using EmailApp.Services.Interface;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace EmailApp.Services
 {
-    public class AdminService
+    public class AdminService : IAdminService // ✅ Ensure it implements the interface
     {
         private readonly IAdminRepository _adminRepository;
 
@@ -17,9 +20,14 @@ namespace EmailApp.Services
             return await _adminRepository.GetAllAdminAsync();
         }
 
-        public async Task<User?> GetAdminByIdAsync(int id)
+        public async Task<Admin?> GetAdminByIdAsync(int id) // ✅ Changed return type to Admin?
         {
             return await _adminRepository.GetAdminByIdAsync(id);
+        }
+
+        public async Task<Admin?> GetAdminByEmailAsync(string email)
+        {
+            return await _adminRepository.GetAdminByEmailAsync(email);
         }
 
         public async Task<bool> CreateAdminAsync(Admin admin)
@@ -27,7 +35,7 @@ namespace EmailApp.Services
             return await _adminRepository.CreateAdminAsync(admin);
         }
 
-        public async Task<bool> UpdateUserAsync(Admin admin)
+        public async Task<bool> UpdateAdminAsync(Admin admin) // ✅ Fixed method name
         {
             return await _adminRepository.UpdateAdminAsync(admin);
         }
@@ -38,4 +46,3 @@ namespace EmailApp.Services
         }
     }
 }
-

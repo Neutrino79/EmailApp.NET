@@ -20,11 +20,15 @@ namespace EmailApp.Data.Repositories
             return await _applicationDb.Admins.ToListAsync();
         }
 
-        public async Task<User> GetAdminByIdAsync(int id)
+        public async Task<Admin> GetAdminByIdAsync(int id)
         {
-            return await _applicationDb.Users.FindAsync(id);
+            return await _applicationDb.Admins.FindAsync(id);
         }
 
+        public async Task<Admin> GetAdminByEmailAsync(string email)
+        {
+            return await _applicationDb.Admins.FindAsync(email);
+        }
         public async Task<bool> CreateAdminAsync(Admin admin)
         {
             try
@@ -72,6 +76,5 @@ namespace EmailApp.Data.Repositories
             }
 
         }
-
     }
 }

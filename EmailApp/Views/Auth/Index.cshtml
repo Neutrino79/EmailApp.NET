@@ -27,6 +27,12 @@
                 <span asp-validation-for="Password" class="text-danger"></span>
             </div>
 
+            <!-- ✅ Subscribe Checkbox -->
+            <div class="mb-3 form-check">
+                <input asp-for="IsSubscribed" type="checkbox" class="form-check-input">
+                <label asp-for="IsSubscribed" class="form-check-label">Subscribe to daily emails</label>
+            </div>
+
             <button type="submit" class="btn btn-primary w-100">Sign Up</button>
         </form>
 

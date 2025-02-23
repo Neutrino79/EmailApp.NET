@@ -1,0 +1,76 @@
+# Visual Studio Specific
+.vs/
+*.user
+*.suo
+*.cache
+*.csproj.user
+*.sln.docstates
+
+# Build Outputs
+bin/
+obj/
+out/
+
+# NuGet Packages
+*.nupkg
+packages/
+project.lock.json
+project.assets.json
+.nuget/
+
+# User-Specific Files
+*.rsuser
+*.userosscache
+*.sln.ide
+
+# Logs and Reports
+logs/
+*.log
+*.tlog
+*.dmp
+
+# Web Specific
+node_modules/
+bower_components/
+wwwroot/lib/
+wwwroot/dist/
+
+# Database Files
+*.mdf
+*.ldf
+*.sqlite
+*.db
+
+# Environment and Secrets
+appsettings.json
+appsettings.Development.json
+secrets.json
+
+# Publish Output
+.publish/
+*.publish.xml
+
+# Resharper & Rider
+.idea/
+*.DotSettings.user
+_ReSharper.Caches/
+
+# JetBrains Rider
+**/idea/**
+**/.idea/
+
+# Image Thumbnails
+Thumbs.db
+
+# MacOS System Files
+.DS_Store
+._*
+
+# Windows Thumbnails and Cache
+[Tt]humbs.db
+Desktop.ini
+
+# Azure and Deployment
+azure-pipelines.yml
+Dockerfile
+*.dockerignore
