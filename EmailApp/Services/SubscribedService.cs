@@ -96,18 +96,28 @@ namespace EmailApp.Services
                 return false;
             }
 
-            // Parallel email sending
-            await Parallel.ForEachAsync(emailList, async (email, cancellationToken) =>
+            var failedEmails = new List<string>();
+
+            foreach (var email in emailList)
             {
-                await SendEmailToUserAsync(email, subject, message);
-            });
+                bool success = await SendEmailToUserAsync(email, subject, message);
+                if (!success)
+                {
+                    failedEmails.Add(email);
+                }
+            }
+
+            if (failedEmails.Any())
+            {
+                _logger.LogError("Failed to send emails to the following users: {Emails}", string.Join(", ", failedEmails));
+                return false;
+            }
 
             _logger.LogInformation("Emails sent successfully to {Count} users.", emailList.Count);
             return true;
         }
 
- 
-        private async Task SendEmailToUserAsync(string recipientEmail, string subject, string body)
+        private async Task<bool> SendEmailToUserAsync(string recipientEmail, string subject, string body)
         {
             try
             {
@@ -119,15 +129,17 @@ namespace EmailApp.Services
 
                 using var client = new MailKit.Net.Smtp.SmtpClient();
                 await client.ConnectAsync("smtp.gmail.com", 587, SecureSocketOptions.StartTls);
-                await client.AuthenticateAsync(_smtpCredentials.Email, _smtpCredentials.Password);//Need to add the email and pass for SMTP 
+                await client.AuthenticateAsync(_smtpCredentials.Email, _smtpCredentials.Password);
                 await client.SendAsync(message);
                 await client.DisconnectAsync(true);
 
                 _logger.LogInformation("Email successfully sent to {Email}", recipientEmail);
+                return true;
             }
             catch (Exception ex)
             {
                 _logger.LogError("Failed to send email to {Email}: {Message}", recipientEmail, ex.Message);
+                return false;
             }
         }
 

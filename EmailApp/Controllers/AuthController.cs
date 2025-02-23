@@ -109,7 +109,7 @@ namespace EmailApp.Controllers
                 var authProperties = new AuthenticationProperties { IsPersistent = true };
 
                 await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(claimsIdentity), authProperties);
-                return RedirectToAction("Profile", "Home");
+                return RedirectToAction("Profile", "User");
             }
         }
 

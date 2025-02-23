@@ -3,14 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\atharvumesh_hiremath\\source\\repos\\MVC\\EmailApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A21C2BB0-CD08-4AF5-A274-B0102CC4C879}|EmailApp\\EmailApp.csproj|c:\\users\\atharvumesh_hiremath\\source\\repos\\mvc\\emailapp\\emailapp\\services\\subscribedservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A21C2BB0-CD08-4AF5-A274-B0102CC4C879}|EmailApp\\EmailApp.csproj|solutionrelative:emailapp\\services\\subscribedservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A21C2BB0-CD08-4AF5-A274-B0102CC4C879}|EmailApp\\EmailApp.csproj|c:\\users\\atharvumesh_hiremath\\source\\repos\\mvc\\emailapp\\emailapp\\views\\auth\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A21C2BB0-CD08-4AF5-A274-B0102CC4C879}|EmailApp\\EmailApp.csproj|solutionrelative:emailapp\\views\\auth\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A21C2BB0-CD08-4AF5-A274-B0102CC4C879}|EmailApp\\EmailApp.csproj|c:\\users\\atharvumesh_hiremath\\source\\repos\\mvc\\emailapp\\emailapp\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A21C2BB0-CD08-4AF5-A274-B0102CC4C879}|EmailApp\\EmailApp.csproj|solutionrelative:emailapp\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -19,28 +11,20 @@
       "RelativeMoniker": "D:0:0:{A21C2BB0-CD08-4AF5-A274-B0102CC4C879}|EmailApp\\EmailApp.csproj|solutionrelative:emailapp\\views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A21C2BB0-CD08-4AF5-A274-B0102CC4C879}|EmailApp\\EmailApp.csproj|c:\\users\\atharvumesh_hiremath\\source\\repos\\mvc\\emailapp\\emailapp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A21C2BB0-CD08-4AF5-A274-B0102CC4C879}|EmailApp\\EmailApp.csproj|solutionrelative:emailapp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A21C2BB0-CD08-4AF5-A274-B0102CC4C879}|EmailApp\\EmailApp.csproj|c:\\users\\atharvumesh_hiremath\\source\\repos\\mvc\\emailapp\\emailapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A21C2BB0-CD08-4AF5-A274-B0102CC4C879}|EmailApp\\EmailApp.csproj|solutionrelative:emailapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A21C2BB0-CD08-4AF5-A274-B0102CC4C879}|EmailApp\\EmailApp.csproj|c:\\users\\atharvumesh_hiremath\\source\\repos\\mvc\\emailapp\\emailapp\\data\\repositories\\subscribedrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A21C2BB0-CD08-4AF5-A274-B0102CC4C879}|EmailApp\\EmailApp.csproj|solutionrelative:emailapp\\data\\repositories\\subscribedrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A21C2BB0-CD08-4AF5-A274-B0102CC4C879}|EmailApp\\EmailApp.csproj|c:\\users\\atharvumesh_hiremath\\source\\repos\\mvc\\emailapp\\emailapp\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A21C2BB0-CD08-4AF5-A274-B0102CC4C879}|EmailApp\\EmailApp.csproj|solutionrelative:emailapp\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A21C2BB0-CD08-4AF5-A274-B0102CC4C879}|EmailApp\\EmailApp.csproj|c:\\users\\atharvumesh_hiremath\\source\\repos\\mvc\\emailapp\\emailapp\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A21C2BB0-CD08-4AF5-A274-B0102CC4C879}|EmailApp\\EmailApp.csproj|solutionrelative:emailapp\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A21C2BB0-CD08-4AF5-A274-B0102CC4C879}|EmailApp\\EmailApp.csproj|c:\\users\\atharvumesh_hiremath\\source\\repos\\mvc\\emailapp\\emailapp\\views\\user\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A21C2BB0-CD08-4AF5-A274-B0102CC4C879}|EmailApp\\EmailApp.csproj|solutionrelative:emailapp\\views\\user\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A21C2BB0-CD08-4AF5-A274-B0102CC4C879}|EmailApp\\EmailApp.csproj|c:\\users\\atharvumesh_hiremath\\source\\repos\\mvc\\emailapp\\emailapp\\data\\repositories\\adminrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A21C2BB0-CD08-4AF5-A274-B0102CC4C879}|EmailApp\\EmailApp.csproj|solutionrelative:emailapp\\data\\repositories\\adminrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A21C2BB0-CD08-4AF5-A274-B0102CC4C879}|EmailApp\\EmailApp.csproj|c:\\users\\atharvumesh_hiremath\\source\\repos\\mvc\\emailapp\\emailapp\\data\\repositories\\interface\\iadminrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A21C2BB0-CD08-4AF5-A274-B0102CC4C879}|EmailApp\\EmailApp.csproj|solutionrelative:emailapp\\data\\repositories\\interface\\iadminrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A21C2BB0-CD08-4AF5-A274-B0102CC4C879}|EmailApp\\EmailApp.csproj|c:\\users\\atharvumesh_hiremath\\source\\repos\\mvc\\emailapp\\emailapp\\models\\entites\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A21C2BB0-CD08-4AF5-A274-B0102CC4C879}|EmailApp\\EmailApp.csproj|solutionrelative:emailapp\\models\\entites\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A21C2BB0-CD08-4AF5-A274-B0102CC4C879}|EmailApp\\EmailApp.csproj|c:\\users\\atharvumesh_hiremath\\source\\repos\\mvc\\emailapp\\emailapp\\views\\auth\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A21C2BB0-CD08-4AF5-A274-B0102CC4C879}|EmailApp\\EmailApp.csproj|solutionrelative:emailapp\\views\\auth\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -62,132 +46,80 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\atharvumesh_hiremath\\source\\repos\\MVC\\EmailApp\\EmailApp\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "EmailApp\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\atharvumesh_hiremath\\source\\repos\\MVC\\EmailApp\\EmailApp\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "EmailApp\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAmwFAAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-23T05:47:03.259Z",
+              "DocumentIndex": 2,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\atharvumesh_hiremath\\source\\repos\\MVC\\EmailApp\\EmailApp\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "EmailApp\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\atharvumesh_hiremath\\source\\repos\\MVC\\EmailApp\\EmailApp\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "EmailApp\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAGwAAAAAAAAAAAAAAHkAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-23T14:34:51.946Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\atharvumesh_hiremath\\source\\repos\\MVC\\EmailApp\\EmailApp\\Views\\Auth\\Index.cshtml",
-              "RelativeDocumentMoniker": "EmailApp\\Views\\Auth\\Index.cshtml",
-              "ToolTip": "C:\\Users\\atharvumesh_hiremath\\source\\repos\\MVC\\EmailApp\\EmailApp\\Views\\Auth\\Index.cshtml",
-              "RelativeToolTip": "EmailApp\\Views\\Auth\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-23T05:37:20.5Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\atharvumesh_hiremath\\source\\repos\\MVC\\EmailApp\\EmailApp\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "EmailApp\\Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\atharvumesh_hiremath\\source\\repos\\MVC\\EmailApp\\EmailApp\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "EmailApp\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAcwB0AAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-23T04:20:40.019Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "Login.cshtml",
               "DocumentMoniker": "C:\\Users\\atharvumesh_hiremath\\source\\repos\\MVC\\EmailApp\\EmailApp\\Views\\Auth\\Login.cshtml",
               "RelativeDocumentMoniker": "EmailApp\\Views\\Auth\\Login.cshtml",
               "ToolTip": "C:\\Users\\atharvumesh_hiremath\\source\\repos\\MVC\\EmailApp\\EmailApp\\Views\\Auth\\Login.cshtml",
               "RelativeToolTip": "EmailApp\\Views\\Auth\\Login.cshtml",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-23T04:45:07.525Z",
+              "WhenOpened": "2025-02-23T14:28:34.459Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "SubscribedRepository.cs",
-              "DocumentMoniker": "C:\\Users\\atharvumesh_hiremath\\source\\repos\\MVC\\EmailApp\\EmailApp\\Data\\Repositories\\SubscribedRepository.cs",
-              "RelativeDocumentMoniker": "EmailApp\\Data\\Repositories\\SubscribedRepository.cs",
-              "ToolTip": "C:\\Users\\atharvumesh_hiremath\\source\\repos\\MVC\\EmailApp\\EmailApp\\Data\\Repositories\\SubscribedRepository.cs",
-              "RelativeToolTip": "EmailApp\\Data\\Repositories\\SubscribedRepository.cs",
-              "ViewState": "AgIAAEUAAAAAAAAAAAAowEoAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-23T05:53:46.129Z",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\atharvumesh_hiremath\\source\\repos\\MVC\\EmailApp\\EmailApp\\Views\\Auth\\Index.cshtml",
+              "RelativeDocumentMoniker": "EmailApp\\Views\\Auth\\Index.cshtml",
+              "ToolTip": "C:\\Users\\atharvumesh_hiremath\\source\\repos\\MVC\\EmailApp\\EmailApp\\Views\\Auth\\Index.cshtml",
+              "RelativeToolTip": "EmailApp\\Views\\Auth\\Index.cshtml",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAqwAkAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-23T14:28:24.597Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "SubscribedService.cs",
-              "DocumentMoniker": "C:\\Users\\atharvumesh_hiremath\\source\\repos\\MVC\\EmailApp\\EmailApp\\Services\\SubscribedService.cs",
-              "RelativeDocumentMoniker": "EmailApp\\Services\\SubscribedService.cs",
-              "ToolTip": "C:\\Users\\atharvumesh_hiremath\\source\\repos\\MVC\\EmailApp\\EmailApp\\Services\\SubscribedService.cs",
-              "RelativeToolTip": "EmailApp\\Services\\SubscribedService.cs",
-              "ViewState": "AgIAAGkAAAAAAAAAAAAmwHgAAAAAAAAAAAAAAA==",
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\atharvumesh_hiremath\\source\\repos\\MVC\\EmailApp\\EmailApp\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "EmailApp\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\atharvumesh_hiremath\\source\\repos\\MVC\\EmailApp\\EmailApp\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "EmailApp\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAwwAkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-23T05:47:40.411Z",
+              "WhenOpened": "2025-02-23T14:24:31.246Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "AdminController.cs",
-              "DocumentMoniker": "C:\\Users\\atharvumesh_hiremath\\source\\repos\\MVC\\EmailApp\\EmailApp\\Controllers\\AdminController.cs",
-              "RelativeDocumentMoniker": "EmailApp\\Controllers\\AdminController.cs",
-              "ToolTip": "C:\\Users\\atharvumesh_hiremath\\source\\repos\\MVC\\EmailApp\\EmailApp\\Controllers\\AdminController.cs",
-              "RelativeToolTip": "EmailApp\\Controllers\\AdminController.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAQwBYAAAAeAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\atharvumesh_hiremath\\source\\repos\\MVC\\EmailApp\\EmailApp\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "EmailApp\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\atharvumesh_hiremath\\source\\repos\\MVC\\EmailApp\\EmailApp\\Controllers\\UserController.cs",
+              "RelativeToolTip": "EmailApp\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-23T05:33:56.387Z",
+              "WhenOpened": "2025-02-23T14:21:33.193Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "IAdminRepository.cs",
-              "DocumentMoniker": "C:\\Users\\atharvumesh_hiremath\\source\\repos\\MVC\\EmailApp\\EmailApp\\Data\\Repositories\\Interface\\IAdminRepository.cs",
-              "RelativeDocumentMoniker": "EmailApp\\Data\\Repositories\\Interface\\IAdminRepository.cs",
-              "ToolTip": "C:\\Users\\atharvumesh_hiremath\\source\\repos\\MVC\\EmailApp\\EmailApp\\Data\\Repositories\\Interface\\IAdminRepository.cs",
-              "RelativeToolTip": "EmailApp\\Data\\Repositories\\Interface\\IAdminRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA9AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-23T05:19:37.772Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "AdminRepository.cs",
-              "DocumentMoniker": "C:\\Users\\atharvumesh_hiremath\\source\\repos\\MVC\\EmailApp\\EmailApp\\Data\\Repositories\\AdminRepository.cs",
-              "RelativeDocumentMoniker": "EmailApp\\Data\\Repositories\\AdminRepository.cs",
-              "ToolTip": "C:\\Users\\atharvumesh_hiremath\\source\\repos\\MVC\\EmailApp\\EmailApp\\Data\\Repositories\\AdminRepository.cs",
-              "RelativeToolTip": "EmailApp\\Data\\Repositories\\AdminRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAABgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-23T04:22:59.399Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Admin.cs",
-              "DocumentMoniker": "C:\\Users\\atharvumesh_hiremath\\source\\repos\\MVC\\EmailApp\\EmailApp\\Models\\Entites\\Admin.cs",
-              "RelativeDocumentMoniker": "EmailApp\\Models\\Entites\\Admin.cs",
-              "ToolTip": "C:\\Users\\atharvumesh_hiremath\\source\\repos\\MVC\\EmailApp\\EmailApp\\Models\\Entites\\Admin.cs",
-              "RelativeToolTip": "EmailApp\\Models\\Entites\\Admin.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-23T04:44:04.039Z",
+              "DocumentIndex": 4,
+              "Title": "Profile.cshtml",
+              "DocumentMoniker": "C:\\Users\\atharvumesh_hiremath\\source\\repos\\MVC\\EmailApp\\EmailApp\\Views\\User\\Profile.cshtml",
+              "RelativeDocumentMoniker": "EmailApp\\Views\\User\\Profile.cshtml",
+              "ToolTip": "C:\\Users\\atharvumesh_hiremath\\source\\repos\\MVC\\EmailApp\\EmailApp\\Views\\User\\Profile.cshtml",
+              "RelativeToolTip": "EmailApp\\Views\\User\\Profile.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-23T14:19:59.051Z",
               "EditorCaption": ""
             }
           ]

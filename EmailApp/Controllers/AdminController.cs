@@ -27,7 +27,7 @@ namespace EmailApp.Controllers
 
             if (!isSuccess)
             {
-                TempData["ErrorMessage"] = "Failed to send email. Please check input fields.";
+                TempData["ErrorMessage"] = "Failed to send email. Error Occured while sending the Emails";
             }
             else
             {

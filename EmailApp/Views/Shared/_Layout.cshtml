@@ -13,21 +13,23 @@
     <!-- FontAwesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
-<body>
+<body class="d-flex flex-column min-vh-100">
+
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-controller="Home" asp-action="Index">
+            <div class="container">
+                <a class="navbar-brand fw-bold" asp-controller="User" asp-action="Profile">
                     <i class="fa fa-envelope"></i> EmailApp
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+
                 <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link text-white" asp-controller="Home" asp-action="Index">
+                            <a class="nav-link text-white fw-semibold" asp-controller="User" asp-action="Profile">
                                 <i class="fa fa-home"></i> Home
                             </a>
                         </li>
@@ -37,12 +39,12 @@
                             if (User.IsInRole("Admin"))
                             {
                                 <li class="nav-item">
-                                    <a class="nav-link text-white" asp-controller="Admin" asp-action="Dashboard">
+                                    <a class="nav-link text-white fw-semibold" asp-controller="Admin" asp-action="Dashboard">
                                         <i class="fa fa-users"></i> Subscribers
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link text-white" asp-controller="Admin" asp-action="ComposeMail">
+                                    <a class="nav-link text-white fw-semibold" asp-controller="Admin" asp-action="ComposeMail">
                                         <i class="fa fa-envelope"></i> Send Mail
                                     </a>
                                 </li>
@@ -50,7 +52,7 @@
                             else
                             {
                                 <li class="nav-item">
-                                    <a class="nav-link text-white" asp-controller="Subscription" asp-action="Subscribe">
+                                    <a class="nav-link text-white fw-semibold" asp-controller="Subscription" asp-action="Subscribe">
                                         <i class="fa fa-user-plus"></i> Subscribe
                                     </a>
                                 </li>
@@ -62,7 +64,7 @@
                         @if (User.Identity.IsAuthenticated)
                         {
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle text-white" href="#" id="profileDropdown" role="button"
+                                <a class="nav-link dropdown-toggle text-white fw-semibold" href="#" id="profileDropdown" role="button"
                                    data-bs-toggle="dropdown" aria-expanded="false">
                                     <i class="fa fa-user"></i> @User.Identity.Name
                                 </a>
@@ -79,12 +81,12 @@
                         else
                         {
                             <li class="nav-item">
-                                <a class="nav-link text-white" asp-controller="Auth" asp-action="Login">
+                                <a class="nav-link text-white fw-semibold" asp-controller="Auth" asp-action="Login">
                                     <i class="fa fa-sign-in-alt"></i> Login
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-white" asp-controller="Auth" asp-action="Index">
+                                <a class="nav-link text-white fw-semibold" asp-controller="Auth" asp-action="Index">
                                     <i class="fa fa-user-plus"></i> Register
                                 </a>
                             </li>
@@ -95,39 +97,55 @@
         </nav>
     </header>
 
-    <div class="container mt-4">
+    <!-- Flash Messages (Success & Error) -->
+    <div class="container mt-3">
         <div class="alert-container">
-            @if (TempData["SuccessMessage"] != null)
+            @if (TempData["Success"] != null)
             {
                 <div class="alert alert-success alert-dismissible fade show" role="alert">
-                    <i class="fa fa-check-circle"></i> @TempData["SuccessMessage"]
+                    <i class="fa fa-check-circle"></i> @TempData["Success"]
                     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                 </div>
             }
-            @if (TempData["ErrorMessage"] != null)
+            @if (TempData["Error"] != null)
             {
                 <div class="alert alert-danger alert-dismissible fade show" role="alert">
-                    <i class="fa fa-exclamation-triangle"></i> @TempData["ErrorMessage"]
+                    <i class="fa fa-exclamation-triangle"></i> @TempData["Error"]
                     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                 </div>
             }
         </div>
-
-        <main role="main" class="pb-4">
-            @RenderBody()
-        </main>
     </div>
 
-    <footer class="footer bg-light text-center py-3 mt-auto border-top">
+    <main role="main" class="container flex-grow-1 py-4">
+        @RenderBody()
+    </main>
+
+    <footer class="footer bg-light text-center py-3 mt-auto border-top shadow-sm">
         <div class="container">
-            <p class="mb-0 text-muted">&copy; 2025 - EmailApp | <a asp-controller="Home" asp-action="Privacy">Privacy Policy</a></p>
+            <p class="mb-0 text-muted">
+                &copy; @DateTime.Now.Year - EmailApp |
+                <a asp-controller="Home" asp-action="Privacy" class="text-decoration-none">Privacy Policy</a>
+            </p>
         </div>
     </footer>
 
-    <!-- Bootstrap JS -->
+    <!-- Bootstrap & jQuery -->
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
+
+    <script>
+        // Auto-close alerts after 5 seconds
+        setTimeout(() => {
+            let alerts = document.querySelectorAll('.alert');
+            alerts.forEach(alert => {
+                let bsAlert = new bootstrap.Alert(alert);
+                bsAlert.close();
+            });
+        }, 5000);
+    </script>
+
 </body>
 </html>
