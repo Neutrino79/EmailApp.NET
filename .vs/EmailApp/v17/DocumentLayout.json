@@ -52,7 +52,7 @@
               "RelativeDocumentMoniker": "EmailApp\\Views\\Shared\\_Layout.cshtml",
               "ToolTip": "C:\\Users\\atharvumesh_hiremath\\source\\repos\\MVC\\EmailApp\\EmailApp\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "EmailApp\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIIAAAA1AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-02-22T10:37:41.26Z",
               "EditorCaption": ""
@@ -79,8 +79,7 @@
               "RelativeToolTip": "EmailApp\\Services\\SubscribedService.cs",
               "ViewState": "AgIAAGkAAAAAAAAAAAA+wH4AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-22T10:06:24.381Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-22T10:06:24.381Z"
             },
             {
               "$type": "Document",
