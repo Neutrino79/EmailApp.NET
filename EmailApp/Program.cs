@@ -1,10 +1,12 @@
 ﻿using EmailApp.Data;
 using EmailApp.Data.Repositories;
 using EmailApp.Data.Repositories.Interface;
+using EmailApp.Models.IEntities;
 using EmailApp.Services;
 using EmailApp.Services.Interface;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,6 +16,9 @@ builder.Services.AddControllersWithViews();
 // Configure database
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DevConnString")));
+
+builder.Services.Configure<SMTPCredentials>(builder.Configuration.GetSection("SMTPCredentials"));
+
 
 // Register repositories
 builder.Services.AddScoped<IUserRepository, UserRepository>();

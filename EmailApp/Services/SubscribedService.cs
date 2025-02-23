@@ -6,6 +6,8 @@ using MailKit.Security;
 using Microsoft.Extensions.Logging;
 using MimeKit;
 using MailKit.Net.Smtp;
+using EmailApp.Models.IEntities;
+using Microsoft.Extensions.Options;
 
 namespace EmailApp.Services
 {
@@ -13,11 +15,13 @@ namespace EmailApp.Services
     {
         private readonly ISubscribedRepository _subscribedRepository;
         private readonly ILogger<SubscribedService> _logger;
+        private readonly SMTPCredentials _smtpCredentials;
 
-        public SubscribedService(ISubscribedRepository subscribedRepository, ILogger<SubscribedService> logger)
+        public SubscribedService(ISubscribedRepository subscribedRepository, ILogger<SubscribedService> logger, IOptions<SMTPCredentials> smtp)
         {
             _subscribedRepository = subscribedRepository;
             _logger = logger;
+            _smtpCredentials = smtp.Value;
         }
 
         public async Task<IEnumerable<Subscribed>> GetAllSubscribedUsersAsync()
@@ -115,7 +119,7 @@ namespace EmailApp.Services
 
                 using var client = new MailKit.Net.Smtp.SmtpClient();
                 await client.ConnectAsync("smtp.gmail.com", 587, SecureSocketOptions.StartTls);
-                await client.AuthenticateAsync("_smtpCredentials.Email", "_smtpCredentials.Password");//Need to add the email and pass for SMTP 
+                await client.AuthenticateAsync(_smtpCredentials.Email, _smtpCredentials.Password);//Need to add the email and pass for SMTP 
                 await client.SendAsync(message);
                 await client.DisconnectAsync(true);
 

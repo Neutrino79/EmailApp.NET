@@ -13,12 +13,12 @@ namespace EmailApp.Data
         public DbSet<Admin> Admins { get; set; }
         public DbSet<Subscribed> Subscriptions { get; set; }
 
-        //        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        //        {
-        //            base.OnModelCreating(modelBuilder);
-        //        }
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+        }
 
-        //public ApplicationDbContext() { }
+        public ApplicationDbContext() { }
 
 
         ///*        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
