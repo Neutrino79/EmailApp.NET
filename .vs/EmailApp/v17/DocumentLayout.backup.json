@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\atharvumesh_hiremath\\source\\repos\\MVC\\EmailApp\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A21C2BB0-CD08-4AF5-A274-B0102CC4C879}|EmailApp\\EmailApp.csproj|c:\\users\\atharvumesh_hiremath\\source\\repos\\mvc\\emailapp\\emailapp\\services\\subscribedservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A21C2BB0-CD08-4AF5-A274-B0102CC4C879}|EmailApp\\EmailApp.csproj|solutionrelative:emailapp\\services\\subscribedservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A21C2BB0-CD08-4AF5-A274-B0102CC4C879}|EmailApp\\EmailApp.csproj|c:\\users\\atharvumesh_hiremath\\source\\repos\\mvc\\emailapp\\emailapp\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A21C2BB0-CD08-4AF5-A274-B0102CC4C879}|EmailApp\\EmailApp.csproj|solutionrelative:emailapp\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -34,8 +38,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SubscribedService.cs",
+              "DocumentMoniker": "C:\\Users\\atharvumesh_hiremath\\source\\repos\\MVC\\EmailApp\\EmailApp\\Services\\SubscribedService.cs",
+              "RelativeDocumentMoniker": "EmailApp\\Services\\SubscribedService.cs",
+              "ToolTip": "C:\\Users\\atharvumesh_hiremath\\source\\repos\\MVC\\EmailApp\\EmailApp\\Services\\SubscribedService.cs",
+              "RelativeToolTip": "EmailApp\\Services\\SubscribedService.cs",
+              "ViewState": "AgIAAHcAAAAAAAAAAAA8wI8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-23T14:44:51.339Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
@@ -46,7 +63,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\atharvumesh_hiremath\\source\\repos\\MVC\\EmailApp\\EmailApp\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "EmailApp\\Views\\Shared\\_Layout.cshtml",
@@ -59,7 +76,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Login.cshtml",
               "DocumentMoniker": "C:\\Users\\atharvumesh_hiremath\\source\\repos\\MVC\\EmailApp\\EmailApp\\Views\\Auth\\Login.cshtml",
               "RelativeDocumentMoniker": "EmailApp\\Views\\Auth\\Login.cshtml",
@@ -72,7 +89,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\atharvumesh_hiremath\\source\\repos\\MVC\\EmailApp\\EmailApp\\Views\\Auth\\Index.cshtml",
               "RelativeDocumentMoniker": "EmailApp\\Views\\Auth\\Index.cshtml",
@@ -85,7 +102,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "AuthController.cs",
               "DocumentMoniker": "C:\\Users\\atharvumesh_hiremath\\source\\repos\\MVC\\EmailApp\\EmailApp\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "EmailApp\\Controllers\\AuthController.cs",
@@ -98,7 +115,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "UserController.cs",
               "DocumentMoniker": "C:\\Users\\atharvumesh_hiremath\\source\\repos\\MVC\\EmailApp\\EmailApp\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "EmailApp\\Controllers\\UserController.cs",
@@ -111,7 +128,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Profile.cshtml",
               "DocumentMoniker": "C:\\Users\\atharvumesh_hiremath\\source\\repos\\MVC\\EmailApp\\EmailApp\\Views\\User\\Profile.cshtml",
               "RelativeDocumentMoniker": "EmailApp\\Views\\User\\Profile.cshtml",
