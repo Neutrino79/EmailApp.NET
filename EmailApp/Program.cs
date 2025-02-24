@@ -1,12 +1,11 @@
-﻿using EmailApp.Data;
-using EmailApp.Data.Repositories;
-using EmailApp.Data.Repositories.Interface;
-using EmailApp.Models.IEntities;
-using EmailApp.Services;
-using EmailApp.Services.Interface;
+﻿using EmailApp.Application.Services;
+using EmailApp.Contracts;
+using EmailApp.Infrastructure;
+using EmailApp.Domain.Interface;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
+using EmailApp.Domain.Models.Entities;
+using EmailApp.Infrastructure.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 

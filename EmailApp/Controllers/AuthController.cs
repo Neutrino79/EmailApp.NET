@@ -1,10 +1,9 @@
-﻿using EmailApp.Models.Entites;
-using EmailApp.Services.Interface;
-using Microsoft.AspNetCore.Authentication.Cookies;
+﻿using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
-using System.Threading.Tasks;
+using EmailApp.Contracts;
+using EmailApp.Domain.Models.Entities;
 
 namespace EmailApp.Controllers
 {

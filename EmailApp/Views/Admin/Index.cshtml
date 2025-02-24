@@ -1,4 +1,4 @@
-﻿@model IEnumerable<EmailApp.Models.Entites.Subscribed>
+﻿@model IEnumerable<EmailApp.Domain.Models.Entities.User>
 @{
     ViewData["Title"] = "Admin Home";
 }
@@ -38,9 +38,9 @@
                             @foreach (var sub in Model)
                             {
                                 <li class="list-group-item d-flex align-items-center">
-                                    <input type="checkbox" class="form-check-input me-2 user-checkbox" value="@sub.User.UserId">
-                                    <span class="fw-bold">@sub.User.Name</span>
-                                    <small class="text-muted ms-auto">@sub.User.Email</small>
+                                    <input type="checkbox" class="form-check-input me-2 user-checkbox" value="@sub.UserId">
+                                    <span class="fw-bold">@sub.Name</span>
+                                    <small class="text-muted ms-auto">@sub.Email</small>
                                 </li>
                             }
                         </ul>

@@ -1,8 +1,8 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\atharvumesh_hiremath\\source\\repos\\MVC\\EmailApp\\EmailApp\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\EmailApp.bundle.scp.css",
-      "PackagePath": "staticwebassets\\EmailApp.7gkr9iq7xs.bundle.scp.css"
+      "Id": "C:\\Users\\atharvumesh_hiremath\\source\\repos\\MVC\\EmailApp\\EmailApp\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\EmailApp.Presentation.bundle.scp.css",
+      "PackagePath": "staticwebassets\\EmailApp.Presentation.tl7gdf0ogi.bundle.scp.css"
     },
     {
       "Id": "C:\\Users\\atharvumesh_hiremath\\source\\repos\\MVC\\EmailApp\\EmailApp\\wwwroot\\css\\site.css",
@@ -257,24 +257,24 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.min.map"
     },
     {
-      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.EmailApp.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.EmailApp.Presentation.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },
     {
-      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.EmailApp.Microsoft.AspNetCore.StaticWebAssets.props",
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.EmailApp.Presentation.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },
     {
-      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.build.EmailApp.props",
-      "PackagePath": "build\\EmailApp.props"
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.build.EmailApp.Presentation.props",
+      "PackagePath": "build\\EmailApp.Presentation.props"
     },
     {
-      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildMultiTargeting.EmailApp.props",
-      "PackagePath": "buildMultiTargeting\\EmailApp.props"
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildMultiTargeting.EmailApp.Presentation.props",
+      "PackagePath": "buildMultiTargeting\\EmailApp.Presentation.props"
     },
     {
-      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildTransitive.EmailApp.props",
-      "PackagePath": "buildTransitive\\EmailApp.props"
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildTransitive.EmailApp.Presentation.props",
+      "PackagePath": "buildTransitive\\EmailApp.Presentation.props"
     }
   ],
   "ElementsToRemove": []

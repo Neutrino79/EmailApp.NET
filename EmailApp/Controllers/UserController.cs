@@ -1,7 +1,6 @@
 ﻿using System.Security.Claims;
-using System.Threading.Tasks;
-using EmailApp.Models.Entites;
-using EmailApp.Services.Interface;
+using EmailApp.Contracts;
+using EmailApp.Domain.Models.Entities;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 

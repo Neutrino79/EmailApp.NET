@@ -78,55 +78,33 @@ Follow these steps to set up and run the **EmailApp** project:
 ## 📂 Project Structure
 ```
 EmailApp/
-│   EmailApp.sln
-│   .gitignore
+│   EmailApp.sln                   # Solution file
+│   README.md                      # Project documentation
 │
-├── EmailApp/
-│   │   appsettings.json
-│   │   appsettings.Development.json
-│   │   Program.cs
-│   │   EmailApp.csproj
-│   │
-│   ├── Controllers/
-│   │   ├── AdminController.cs
-│   │   ├── AuthController.cs
-│   │   ├── UserController.cs
-│   │
-│   ├── Data/
-│   │   ├── ApplicationDbContext.cs
-│   │   ├── Repositories/
-│   │   │   ├── AdminRepository.cs
-│   │   │   ├── SubscribedRepository.cs
-│   │   │   ├── UserRepository.cs
-│   │   │   ├── Interface/
-│   │   │   │   ├── IAdminRepository.cs
-│   │   │   │   ├── ISubscribedRepository.cs
-│   │   │   │   ├── IUserRepository.cs
-│   │
-│   ├── Models/
-│   │   ├── Entities/
-│   │   │   ├── Admin.cs
-│   │   │   ├── Subscribed.cs
-│   │   │   ├── User.cs
-│   │   ├── IEntities/
-│   │   │   ├── IAdmin.cs
-│   │   │   ├── ISubscribed.cs
-│   │   │   ├── IUser.cs
-│   │   │   ├── SMTPCredentials.cs
+├───EmailApp.Presentation           # UI Layer (MVC Views & Controllers)
+│   ├── Views/                      # Razor Views
+│   ├── wwwroot/                    # Static files (CSS, JS, Images)
+│   ├── appsettings.json            # Application configuration
+│   ├── Program.cs                  # Main entry point
+│   └── EmailApp.Presentation.csproj
 │
-│   ├── Migrations/
-│   │   ├── InitialMigration.cs
-│   │   ├── InitialMigration.Designer.cs
-│   │   ├── ApplicationDbContextModelSnapshot.cs
+├───EmailApp.Application            # Business logic & services
+│   ├── Services/                   # Application services
+│   └── EmailApp.Application.csproj
 │
-│   ├── Views/
-│   │   ├── Admin/
-│   │   │   ├── Index.cshtml
-│   │   │   ├── ComposeMail.cshtml
-│   │   ├── User/
-│   │   │   ├── Register.cshtml
-│   │   │   ├── Login.cshtml
-│   │   │   ├── Subscribe.cshtml
+├───EmailApp.Contracts              # Interfaces for Dependency Injection
+│   └── Contracts/                   # Service Contracts
+│
+├───EmailApp.Domain                 # Core domain models & interfaces
+│   ├── Models/                      # Entity models
+│   ├── Interfaces/                  # Repository interfaces
+│   └── EmailApp.Domain.csproj
+│
+├───EmailApp.Infrastructure         # Database context & repositories
+│   ├── Migrations/                  # EF Core migrations
+│   ├── Repositories/                # Implementation of repositories
+│   ├── ApplicationDbContext.cs      # Database context
+│   └── EmailApp.Infrastructure.csproj
 ```
 
 ---

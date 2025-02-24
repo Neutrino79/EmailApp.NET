@@ -1,9 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35527.113 d17.12
+VisualStudioVersion = 17.12.35527.113
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailApp", "EmailApp\EmailApp.csproj", "{A21C2BB0-CD08-4AF5-A274-B0102CC4C879}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailApp.Presentation", "EmailApp\EmailApp.Presentation.csproj", "{A21C2BB0-CD08-4AF5-A274-B0102CC4C879}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailApp.Application", "EmailApp.Application\EmailApp.Application.csproj", "{711600BA-9FC1-43AF-A6A4-CC1E0A368F2F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailApp.Domain", "EmailApp.Domain\EmailApp.Domain.csproj", "{1508F2E0-0C00-498C-85CB-757A0DAF6900}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailApp.Infrastructure", "EmailApp.Infrastructure\EmailApp.Infrastructure.csproj", "{B11E007F-F36E-4150-9D62-F7292FB9AEBD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailApp.Contracts", "EmailApp.Contracts\EmailApp.Contracts.csproj", "{9C7160AC-4EEC-4B81-9964-3FA9D173CA42}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +23,22 @@ Global
 		{A21C2BB0-CD08-4AF5-A274-B0102CC4C879}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A21C2BB0-CD08-4AF5-A274-B0102CC4C879}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A21C2BB0-CD08-4AF5-A274-B0102CC4C879}.Release|Any CPU.Build.0 = Release|Any CPU
+		{711600BA-9FC1-43AF-A6A4-CC1E0A368F2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{711600BA-9FC1-43AF-A6A4-CC1E0A368F2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{711600BA-9FC1-43AF-A6A4-CC1E0A368F2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{711600BA-9FC1-43AF-A6A4-CC1E0A368F2F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1508F2E0-0C00-498C-85CB-757A0DAF6900}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1508F2E0-0C00-498C-85CB-757A0DAF6900}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1508F2E0-0C00-498C-85CB-757A0DAF6900}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1508F2E0-0C00-498C-85CB-757A0DAF6900}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B11E007F-F36E-4150-9D62-F7292FB9AEBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B11E007F-F36E-4150-9D62-F7292FB9AEBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B11E007F-F36E-4150-9D62-F7292FB9AEBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B11E007F-F36E-4150-9D62-F7292FB9AEBD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C7160AC-4EEC-4B81-9964-3FA9D173CA42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C7160AC-4EEC-4B81-9964-3FA9D173CA42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C7160AC-4EEC-4B81-9964-3FA9D173CA42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C7160AC-4EEC-4B81-9964-3FA9D173CA42}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

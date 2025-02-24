@@ -1,5 +1,4 @@
-﻿using EmailApp.Models.IEntities;
-using EmailApp.Services.Interface;
+﻿using EmailApp.Contracts;
 using Microsoft.AspNetCore.Mvc;
 
 namespace EmailApp.Controllers
@@ -36,7 +35,5 @@ namespace EmailApp.Controllers
 
             return RedirectToAction("Index");
         }
-
-
     }
 }

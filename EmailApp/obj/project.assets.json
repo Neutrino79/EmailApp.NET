@@ -103,15 +103,15 @@
           }
         }
       },
-      "Microsoft.Build.Framework/17.8.3": {
+      "Microsoft.Build.Framework/17.13.9": {
         "type": "package",
         "compile": {
-          "ref/net8.0/_._": {
+          "ref/net9.0/Microsoft.Build.Framework.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net8.0/_._": {
+          "lib/net9.0/Microsoft.Build.Framework.dll": {
             "related": ".pdb;.xml"
           }
         }
@@ -1668,6 +1668,62 @@
             "rid": "win"
           }
         }
+      },
+      "EmailApp.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "EmailApp.Contracts": "1.0.0",
+          "EmailApp.Domain": "1.0.0",
+          "MailKit": "4.10.0",
+          "Microsoft.Build.Framework": "17.13.9",
+          "Microsoft.Extensions.Logging.Abstractions": "9.0.2",
+          "Microsoft.Extensions.Options": "9.0.2"
+        },
+        "compile": {
+          "bin/placeholder/EmailApp.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/EmailApp.Application.dll": {}
+        }
+      },
+      "EmailApp.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "EmailApp.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/EmailApp.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/EmailApp.Contracts.dll": {}
+        }
+      },
+      "EmailApp.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/EmailApp.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/EmailApp.Domain.dll": {}
+        }
+      },
+      "EmailApp.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "EmailApp.Domain": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "9.0.2",
+          "Microsoft.EntityFrameworkCore.SqlServer": "9.0.2"
+        },
+        "compile": {
+          "bin/placeholder/EmailApp.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/EmailApp.Infrastructure.dll": {}
+        }
       }
     }
   },
@@ -1811,10 +1867,10 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "Microsoft.Build.Framework/17.8.3": {
-      "sha512": "NrQZJW8TlKVPx72yltGb8SVz3P5mNRk9fNiD/ao8jRSk48WqIIdCn99q4IjlVmPcruuQ+yLdjNQLL8Rb4c916g==",
+    "Microsoft.Build.Framework/17.13.9": {
+      "sha512": "Yc9R6+YdvB7KStBN2SiojR5bsFf+/xklQFhlgRog1wp+2V6rpfOyJftP6WdMwpvRAdy7kWSrvlrbllw62OgtlA==",
       "type": "package",
-      "path": "microsoft.build.framework/17.8.3",
+      "path": "microsoft.build.framework/17.13.9",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1823,16 +1879,16 @@
         "lib/net472/Microsoft.Build.Framework.dll",
         "lib/net472/Microsoft.Build.Framework.pdb",
         "lib/net472/Microsoft.Build.Framework.xml",
-        "lib/net8.0/Microsoft.Build.Framework.dll",
-        "lib/net8.0/Microsoft.Build.Framework.pdb",
-        "lib/net8.0/Microsoft.Build.Framework.xml",
-        "microsoft.build.framework.17.8.3.nupkg.sha512",
+        "lib/net9.0/Microsoft.Build.Framework.dll",
+        "lib/net9.0/Microsoft.Build.Framework.pdb",
+        "lib/net9.0/Microsoft.Build.Framework.xml",
+        "microsoft.build.framework.17.13.9.nupkg.sha512",
         "microsoft.build.framework.nuspec",
         "notices/THIRDPARTYNOTICES.txt",
         "ref/net472/Microsoft.Build.Framework.dll",
         "ref/net472/Microsoft.Build.Framework.xml",
-        "ref/net8.0/Microsoft.Build.Framework.dll",
-        "ref/net8.0/Microsoft.Build.Framework.xml",
+        "ref/net9.0/Microsoft.Build.Framework.dll",
+        "ref/net9.0/Microsoft.Build.Framework.xml",
         "ref/netstandard2.0/Microsoft.Build.Framework.dll",
         "ref/netstandard2.0/Microsoft.Build.Framework.xml"
       ]
@@ -4903,10 +4959,34 @@
         "system.windows.extensions.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "EmailApp.Application/1.0.0": {
+      "type": "project",
+      "path": "../EmailApp.Application/EmailApp.Application.csproj",
+      "msbuildProject": "../EmailApp.Application/EmailApp.Application.csproj"
+    },
+    "EmailApp.Contracts/1.0.0": {
+      "type": "project",
+      "path": "../EmailApp.Contracts/EmailApp.Contracts.csproj",
+      "msbuildProject": "../EmailApp.Contracts/EmailApp.Contracts.csproj"
+    },
+    "EmailApp.Domain/1.0.0": {
+      "type": "project",
+      "path": "../EmailApp.Domain/EmailApp.Domain.csproj",
+      "msbuildProject": "../EmailApp.Domain/EmailApp.Domain.csproj"
+    },
+    "EmailApp.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../EmailApp.Infrastructure/EmailApp.Infrastructure.csproj",
+      "msbuildProject": "../EmailApp.Infrastructure/EmailApp.Infrastructure.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net9.0": [
+      "EmailApp.Application >= 1.0.0",
+      "EmailApp.Contracts >= 1.0.0",
+      "EmailApp.Domain >= 1.0.0",
+      "EmailApp.Infrastructure >= 1.0.0",
       "MailKit >= 4.10.0",
       "Microsoft.EntityFrameworkCore >= 9.0.2",
       "Microsoft.EntityFrameworkCore.SqlServer >= 9.0.2",
@@ -4920,9 +5000,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\atharvumesh_hiremath\\source\\repos\\MVC\\EmailApp\\EmailApp\\EmailApp.csproj",
-      "projectName": "EmailApp",
-      "projectPath": "C:\\Users\\atharvumesh_hiremath\\source\\repos\\MVC\\EmailApp\\EmailApp\\EmailApp.csproj",
+      "projectUniqueName": "C:\\Users\\atharvumesh_hiremath\\source\\repos\\MVC\\EmailApp\\EmailApp\\EmailApp.Presentation.csproj",
+      "projectName": "EmailApp.Presentation",
+      "projectPath": "C:\\Users\\atharvumesh_hiremath\\source\\repos\\MVC\\EmailApp\\EmailApp\\EmailApp.Presentation.csproj",
       "packagesPath": "C:\\Users\\atharvumesh_hiremath\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\atharvumesh_hiremath\\source\\repos\\MVC\\EmailApp\\EmailApp\\obj\\",
       "projectStyle": "PackageReference",
@@ -4944,7 +5024,20 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\atharvumesh_hiremath\\source\\repos\\MVC\\EmailApp\\EmailApp.Application\\EmailApp.Application.csproj": {
+              "projectPath": "C:\\Users\\atharvumesh_hiremath\\source\\repos\\MVC\\EmailApp\\EmailApp.Application\\EmailApp.Application.csproj"
+            },
+            "C:\\Users\\atharvumesh_hiremath\\source\\repos\\MVC\\EmailApp\\EmailApp.Contracts\\EmailApp.Contracts.csproj": {
+              "projectPath": "C:\\Users\\atharvumesh_hiremath\\source\\repos\\MVC\\EmailApp\\EmailApp.Contracts\\EmailApp.Contracts.csproj"
+            },
+            "C:\\Users\\atharvumesh_hiremath\\source\\repos\\MVC\\EmailApp\\EmailApp.Domain\\EmailApp.Domain.csproj": {
+              "projectPath": "C:\\Users\\atharvumesh_hiremath\\source\\repos\\MVC\\EmailApp\\EmailApp.Domain\\EmailApp.Domain.csproj"
+            },
+            "C:\\Users\\atharvumesh_hiremath\\source\\repos\\MVC\\EmailApp\\EmailApp.Infrastructure\\EmailApp.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\atharvumesh_hiremath\\source\\repos\\MVC\\EmailApp\\EmailApp.Infrastructure\\EmailApp.Infrastructure.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
